@@ -1,0 +1,152 @@
+extends layouts/page
+include mixins/mixins
+block variables
+    - var title= 'Sedona | Магазин'
+    - var mainPage= false
+    - var catalogPage= true
+    - var activNavItem= 'ГОСТИНИЦЫ'
+block pageContent
+    main.main(class=mainPage ? 'main-page' : 'inner-page')
+        h1.visually-hidden Поиск Гостиниц
+        section.form
+            h2.visually-hidden Форма поиска
+            form.form__filter(action='#', method='post')
+                fieldset.form__section.types
+                    legend.form__title.types__title ИНФРАСТРУКТУРА:
+                    ul.types__list
+                        li.types__item
+                            label.checkbox
+                                input.checkbox__field(type='checkbox', name='feature-1', checked)
+                                span.checkbox__indicator
+                                span.checkbox__text БАССЕЙН
+                        li.types__item
+                            label.checkbox
+                                input.checkbox__field(type='checkbox', name='feature-2')
+                                span.checkbox__indicator
+                                span.checkbox__text ПАРКОВКА
+                        li.types__item
+                            label.checkbox
+                                input.checkbox__field(type='checkbox', name='feature-3')
+                                span.checkbox__indicator
+                                span.checkbox__text Wi-Fi
+                fieldset.form__section.types
+                    legend.form__title.types__title Тип жилья:
+                    ul.types__list
+                        li.types__item
+                            label.checkbox
+                                input.checkbox__field(type='checkbox', name='homeType-1', checked)
+                                span.checkbox__indicator
+                                span.checkbox__text Гостиница
+                        li.types__item
+                            label.checkbox
+                                input.checkbox__field(type='checkbox', name='homeType-2')
+                                span.checkbox__indicator
+                                span.checkbox__text МОТЕЛЬ
+                        li.types__item
+                            label.checkbox
+                                input.checkbox__field(type='checkbox', name='homeType-3')
+                                span.checkbox__indicator
+                                span.checkbox__text АПАРТАМЕНТЫ
+                .form__right
+                    fieldset.form__section.range
+                        legend.form__title.range__title Стоимость в сутки (Р):
+                        .range__top
+                            label.range__label
+                                span.range__text От
+                                input.range__field(type='text', name='minRange', value='0')
+                            label.range__label
+                                span.range__text До
+                                input.range__field(type='text', name='maxRange', value='3000')
+                        .range__box
+                            .range__line
+                                .range__scale
+                                span.range__indicator.range__indicator--left
+                                span.range__indicator.range__indicator--right
+                    button.form__button(type='submit') Показать
+        section.sort
+            p.sort__result НАЙДЕНО: 3
+            h2.sort__title СОРТИРОВКА:
+            .sort__list
+                a.sort__item.sort__item--active По цене
+                a.sort__item(href='#') По типу
+                a.sort__item(href='#') ПО РЕЙТИНГУ
+            .sort__rank
+                a.sort__rank-item--down.sort__rank-item--active(aria-label='По убыванию')
+                a.sort__rank-item--up(href='#', aria-label='По возрастанию')
+        ul.hotels
+            li.hotels__item
+                +img({
+                    class: 'hotels__image',
+                    src: 'img/hotel-1.jpg',
+                    path: 'img/',
+                    name: 'hotel-1',
+                    alt: 'Фото отеля',
+                    retina: ['2x', '3x']
+                })
+                .hotels__center
+                    h2.hotels__title Amara Resort & Spa
+                    .hotels__block-center
+                        span.hotels__type Гостиница
+                        span.hotels__price ОТ 4000 Р.
+                    .hotels__block-bottom
+                        a.hotels__about.button.button--small(href='#') ПОДРОБНЕЕ
+                        a.hotels__book-hotel.button.button--blue.button--small(href='#') ЗАБРОНИРОВАТЬ
+                .hotels__right
+                    p.hotels__stars
+                        span.visually-hidden 4-х звёздочный отель
+                        +icon('hotels__star-icon', 'star', 18, 17, {ariaHidden: 'true', role: 'presentation'})
+                        +icon('hotels__star-icon', 'star', 18, 17, {ariaHidden: 'true', role: 'presentation'})
+                        +icon('hotels__star-icon', 'star', 18, 17, {ariaHidden: 'true', role: 'presentation'})
+                        +icon('hotels__star-icon', 'star', 18, 17, {ariaHidden: 'true', role: 'presentation'})
+                    p.hotels__raiting Рейтинг: 8,5
+            li.hotels__item
+                +img({
+                    class: 'hotels__image',
+                    src: 'img/hotel-2.jpg',
+                    path: 'img/',
+                    name: 'hotel-2',
+                    alt: 'Фото отеля',
+                    retina: ['2x', '3x']
+                })
+                .hotels__center
+                    h2.hotels__title Desert Quail Inn
+                    .hotels__block-center
+                        span.hotels__type Мотель
+                        span.hotels__price ОТ 3000 Р.
+                    .hotels__block-bottom
+                        a.hotels__about.button.button--small(href='#') ПОДРОБНЕЕ
+                        a.hotels__book-hotel.button.button--blue.button--small(href='#') ЗАБРОНИРОВАТЬ
+                .hotels__right
+                    p.hotels__stars
+                        span.visually-hidden 3-х звёздочный отель
+                        +icon('hotels__star-icon', 'star', 18, 17, {ariaHidden: 'true', role: 'presentation'})
+                        +icon('hotels__star-icon', 'star', 18, 17, {ariaHidden: 'true', role: 'presentation'})
+                        +icon('hotels__star-icon', 'star', 18, 17, {ariaHidden: 'true', role: 'presentation'})
+                    p.hotels__raiting Рейтинг: 8,9
+            li.hotels__item
+                +img({
+                    class: 'hotels__image',
+                    src: 'img/hotel-3.jpg',
+                    path: 'img/',
+                    name: 'hotel-3',
+                    alt: 'Фото отеля',
+                    retina: ['2x', '3x']
+                })
+                .hotels__center
+                    h2.hotels__title Villas at Poco Diablo
+                    .hotels__block-center
+                        span.hotels__type Апартаменты
+                        span.hotels__price ОТ 2000 Р.
+                    .hotels__block-bottom
+                        a.hotels__about.button.button--small(href='#') ПОДРОБНЕЕ
+                        a.hotels__book-hotel.button.button--blue.button--small(href='#') ЗАБРОНИРОВАТЬ
+                .hotels__right
+                    p.hotels__stars
+                        span.visually-hidden 2-х звёздочный отель
+                        +icon('hotels__star-icon', 'star', 18, 17, {ariaHidden: 'true', role: 'presentation'})
+                        +icon('hotels__star-icon', 'star', 18, 17, {ariaHidden: 'true', role: 'presentation'})
+                    p.hotels__raiting Рейтинг: 9,2
+
+
+
+

@@ -1,0 +1,10 @@
+footer.main-footer
+    .main-footer__bottom
+        a.main-footer__link(href='#') #visitSEDONA
+        +socialList('social', 'item', 'link', [
+            {link: '#', title: 'Мы в Твитере', id: 'tw', width: 17, height: 15},
+            {link: '#', title: 'Мы в Фейсбуке', id: 'fb', width: 12, height: 22},
+            {link: '#', title: 'Мы в Ютубе', id: 'youtube', width: 20, height: 16}])
+        a.main-footer__author-link(href='#', aria-label='Переход на сайт HTML Academy')
+            span.main-footer__author-text WEBSITE by
+            +icon('main-footer__author-icon', 'academy', 113, 39, {role: 'img'})

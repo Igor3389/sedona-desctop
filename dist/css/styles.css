@@ -1,0 +1,1338 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+  padding: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y; }
+  .slick-slider .slick-track {
+    transform: translate3d(0, 0, 0); }
+  .slick-slider .slick-list {
+    transform: translate3d(0, 0, 0); }
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before {
+    display: table;
+    content: ''; }
+  .slick-track:after {
+    display: table;
+    content: '';
+    clear: both; }
+
+.slick-loading .slick-track {
+  visibility: hidden; }
+
+.slick-loading .slick-slide {
+  visibility: hidden; }
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+
+[dir='rtl'] .slick-slide {
+  float: right; }
+
+.slick-initialized .slick-slide {
+  display: block; }
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/*!
+ * Datepicker v1.0.7
+ * https://fengyuanchen.github.io/datepicker
+ *
+ * Copyright 2014-present Chen Fengyuan
+ * Released under the MIT license
+ *
+ * Date: 2019-02-19T12:18:01.828Z
+ */
+.datepicker-container {
+  background-color: #fff;
+  direction: ltr;
+  font-size: 12px;
+  left: 0;
+  line-height: 30px;
+  position: fixed;
+  -webkit-tap-highlight-color: transparent;
+  top: 0;
+  -ms-touch-action: none;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 210px;
+  z-index: -1; }
+
+.datepicker-container::before,
+.datepicker-container::after {
+  border: 5px solid transparent;
+  content: " ";
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 0; }
+
+.datepicker-dropdown {
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 0 3px 6px #ccc;
+  box-shadow: 0 3px 6px #ccc;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: absolute;
+  z-index: 1; }
+
+.datepicker-inline {
+  position: static; }
+
+.datepicker-top-left,
+.datepicker-top-right {
+  border-top-color: #39f; }
+
+.datepicker-top-left::before,
+.datepicker-top-left::after,
+.datepicker-top-right::before,
+.datepicker-top-right::after {
+  border-top: 0;
+  left: 10px;
+  top: -5px; }
+
+.datepicker-top-left::before,
+.datepicker-top-right::before {
+  border-bottom-color: #39f; }
+
+.datepicker-top-left::after,
+.datepicker-top-right::after {
+  border-bottom-color: #fff;
+  top: -4px; }
+
+.datepicker-bottom-left,
+.datepicker-bottom-right {
+  border-bottom-color: #39f; }
+
+.datepicker-bottom-left::before,
+.datepicker-bottom-left::after,
+.datepicker-bottom-right::before,
+.datepicker-bottom-right::after {
+  border-bottom: 0;
+  bottom: -5px;
+  left: 10px; }
+
+.datepicker-bottom-left::before,
+.datepicker-bottom-right::before {
+  border-top-color: #39f; }
+
+.datepicker-bottom-left::after,
+.datepicker-bottom-right::after {
+  border-top-color: #fff;
+  bottom: -4px; }
+
+.datepicker-top-right::before,
+.datepicker-top-right::after,
+.datepicker-bottom-right::before,
+.datepicker-bottom-right::after {
+  left: auto;
+  right: 10px; }
+
+.datepicker-panel > ul {
+  margin: 0;
+  padding: 0;
+  width: 102%; }
+
+.datepicker-panel > ul::before,
+.datepicker-panel > ul::after {
+  content: " ";
+  display: table; }
+
+.datepicker-panel > ul::after {
+  clear: both; }
+
+.datepicker-panel > ul > li {
+  background-color: #fff;
+  cursor: pointer;
+  float: left;
+  height: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 30px; }
+
+.datepicker-panel > ul > li:hover {
+  background-color: #e5f2ff; }
+
+.datepicker-panel > ul > li.muted,
+.datepicker-panel > ul > li.muted:hover {
+  color: #999; }
+
+.datepicker-panel > ul > li.highlighted {
+  background-color: #e5f2ff; }
+
+.datepicker-panel > ul > li.highlighted:hover {
+  background-color: #cce5ff; }
+
+.datepicker-panel > ul > li.picked,
+.datepicker-panel > ul > li.picked:hover {
+  color: #39f; }
+
+.datepicker-panel > ul > li.disabled,
+.datepicker-panel > ul > li.disabled:hover {
+  background-color: #fff;
+  color: #ccc;
+  cursor: default; }
+
+.datepicker-panel > ul > li.disabled.highlighted,
+.datepicker-panel > ul > li.disabled:hover.highlighted {
+  background-color: #e5f2ff; }
+
+.datepicker-panel > ul > li[data-view="years prev"],
+.datepicker-panel > ul > li[data-view="year prev"],
+.datepicker-panel > ul > li[data-view="month prev"],
+.datepicker-panel > ul > li[data-view="years next"],
+.datepicker-panel > ul > li[data-view="year next"],
+.datepicker-panel > ul > li[data-view="month next"],
+.datepicker-panel > ul > li[data-view="next"] {
+  font-size: 18px; }
+
+.datepicker-panel > ul > li[data-view="years current"],
+.datepicker-panel > ul > li[data-view="year current"],
+.datepicker-panel > ul > li[data-view="month current"] {
+  width: 150px; }
+
+.datepicker-panel > ul[data-view="years"] > li,
+.datepicker-panel > ul[data-view="months"] > li {
+  height: 52.5px;
+  line-height: 52.5px;
+  width: 52.5px; }
+
+.datepicker-panel > ul[data-view="week"] > li,
+.datepicker-panel > ul[data-view="week"] > li:hover {
+  background-color: #fff;
+  cursor: default; }
+
+.datepicker-hide {
+  display: none; }
+
+@font-face {
+  font-family: 'Ptsans';
+  src: url("../fonts/ptsans.woff2"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ptsans';
+  src: url("../fonts/ptsansbold.woff2"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(1px 1px 1px 1px);
+  overflow: hidden; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h5, p, fieldset {
+  margin: 0;
+  padding: 0; }
+
+.checkbox {
+  position: relative;
+  user-select: none; }
+  .checkbox:hover {
+    color: #ffffff; }
+    .checkbox:hover .checkbox__indicator {
+      border-color: #ffffff; }
+      .checkbox:hover .checkbox__indicator::before {
+        background-image: url("../img/pngIcons/checked.png"); }
+  .checkbox__text {
+    display: block;
+    padding-left: 40px;
+    line-height: 21px; }
+  .checkbox__indicator {
+    position: absolute;
+    top: -1px;
+    left: 1px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #ffffff;
+    border-radius: 2px; }
+    .checkbox__indicator::before {
+      display: none;
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 2px;
+      width: 23px;
+      height: 18px;
+      background-image: url("../img/pngIcons/checked.png"); }
+  .checkbox__field {
+    display: none; }
+  .checkbox__field:checked + .checkbox__indicator::before {
+    display: block; }
+  .checkbox__field:disabled + .checkbox__indicator::before {
+    background-image: url("../img/pngIcons/checked-disabled.png"); }
+  .checkbox__field:disabled + .checkbox__indicator {
+    border-color: rgba(255, 255, 255, 0.5); }
+  .checkbox__field:disabled + .checkbox__indicator + .checkbox__text {
+    color: rgba(255, 255, 255, 0.5); }
+
+.radio {
+  position: relative;
+  user-select: none; }
+  .radio:hover {
+    color: #000000; }
+    .radio:hover .radio__indicator {
+      border-color: #4d4d4d; }
+      .radio:hover .radio__indicator::before {
+        background-color: #4d4d4d; }
+  .radio__text {
+    display: block;
+    padding-left: 36px;
+    line-height: 20px; }
+  .radio__indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 4px solid #b8b8b8;
+    border-radius: 50%; }
+    .radio__indicator::before {
+      display: none;
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 9px;
+      height: 9px;
+      background-color: #b8b8b8;
+      border-radius: 50%; }
+  .radio__field {
+    display: none; }
+  .radio__field:checked + .radio__indicator::before {
+    display: block; }
+  .radio__field:disabled + .radio__indicator::before {
+    background-color: #ededed; }
+  .radio__field:disabled + .radio__indicator {
+    border-color: #ededed; }
+  .radio__field:disabled + .radio__indicator + .radio__text {
+    color: #ededed; }
+
+.form {
+  padding: 27px 71px 31px;
+  color: #ffffff;
+  background-color: #6d8fae;
+  background-image: url("../img/background/background-filter.jpg");
+  background-repeat: no-repeat; }
+  .form__section {
+    border: none; }
+  .form__filter {
+    display: flex; }
+  .form__right {
+    width: 319px;
+    margin-left: auto; }
+  .form__button {
+    display: block;
+    margin-left: 85px;
+    padding: 0;
+    padding-bottom: 5px;
+    width: 137px;
+    height: 36px;
+    font-family: 'Ptsans', sans-serif;
+    font-size: 14px;
+    line-height: 31px;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 2px; }
+    .form__button:hover {
+      cursor: pointer;
+      background-color: #ffffff;
+      color: #000000; }
+
+.types {
+  margin-right: 121px; }
+  .types__title {
+    display: block;
+    margin-bottom: 25px;
+    border: none;
+    font-size: 16px;
+    line-height: 21px; }
+  .types__item {
+    margin-bottom: 25px; }
+    .types__item:last-child {
+      margin-bottom: 0; }
+
+.button {
+  display: inline-block;
+  padding: 0 5px;
+  height: 86px;
+  font-family: 'Ptsans', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 86px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  background-color: #766357; }
+  .button:hover, .button:focus {
+    cursor: pointer;
+    background-color: #604e43;
+    outline: none; }
+  .button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.5); }
+  .button--blue {
+    height: 58px;
+    line-height: 58px;
+    background-color: #81b3d2; }
+    .button--blue:hover, .button--blue:focus {
+      background-color: #669ec0; }
+    .button--blue:active {
+      background-color: #5496bd; }
+  .button--small {
+    height: 27px;
+    font-size: 14px;
+    line-height: 27px; }
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px; }
+
+.main-header {
+  position: relative; }
+  .main-header__navigation {
+    font-weight: 700; }
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px; }
+
+.navigation-list {
+  display: flex;
+  padding: 15px 72px 15px; }
+  .navigation-list__item {
+    margin-right: 147px; }
+    .navigation-list__item:nth-child(2) {
+      margin-right: auto; }
+    .navigation-list__item:nth-child(3) {
+      margin-right: 165px; }
+    .navigation-list__item:last-child {
+      margin-right: 0; }
+    .navigation-list__item--active {
+      color: #766357; }
+  .navigation-list__link {
+    display: block; }
+    .navigation-list__link[href]:hover, .navigation-list__link[href]:focus {
+      color: #81b3d2; }
+    .navigation-list__link[href]:active {
+      color: rgba(0, 0, 0, 0.3); }
+
+.main__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 76px;
+  margin-bottom: 23px;
+  background-image: url("../img/background/background-header.jpg");
+  background-position: left top;
+  background-repeat: no-repeat; }
+  .main__header-image-welcome {
+    margin-bottom: 3px; }
+  .main__header-image-georgeous {
+    margin-bottom: 44px; }
+  .main__header-image-sedona {
+    margin-bottom: 48px; }
+  .main__header-image-because {
+    margin-bottom: 132px; }
+  .main__header-text {
+    width: 500px;
+    text-align: center; }
+  .main__header-slogan {
+    font-size: 21px; }
+
+.features {
+  margin-bottom: 57px; }
+  .features__text {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+    text-align: center; }
+  .features__large-item {
+    display: flex; }
+  .features__large-image {
+    display: block;
+    height: 256px; }
+  .features__item {
+    width: 33.3333%;
+    padding: 45px 48px 58px; }
+    .features__item--blue {
+      color: #ffffff;
+      background-color: #81b3d2; }
+  .features__list-title {
+    width: 151px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    font-size: 21px;
+    line-height: 23px;
+    text-align: center; }
+  .features__list-text {
+    text-align: center;
+    line-height: 21px; }
+  .features__list-number {
+    display: block;
+    margin-bottom: 21px;
+    text-align: center; }
+  .features__sublist {
+    display: flex;
+    flex-wrap: wrap; }
+  .features__subitem {
+    width: 33.3333%;
+    padding: 60px 55px 81px; }
+  .features__subicon {
+    display: block;
+    height: 75px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    fill: #81b3d2; }
+  .features__subtitle {
+    margin-bottom: 23px;
+    font-size: 21px;
+    line-height: 23px;
+    text-align: center; }
+  .features__subtext {
+    text-align: center;
+    line-height: 21px; }
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eeeeee; }
+
+.feedback__slogan {
+  display: block;
+  width: 450px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700; }
+
+.feedback__text {
+  width: 398px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+  text-align: center;
+  line-height: 25px; }
+
+.feedback__block {
+  position: relative;
+  width: 568px;
+  margin: 0 auto; }
+
+.feedback__button {
+  width: 568px; }
+
+.feedback__form {
+  position: absolute;
+  left: 0;
+  top: 86px;
+  display: none;
+  width: 568px;
+  padding: 56px 55px 65px;
+  font-weight: 700;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); }
+  .feedback__form--visually {
+    display: block; }
+
+.feedback__date-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px; }
+
+.feedback__date-text {
+  margin-right: 23px;
+  white-space: nowrap; }
+
+.feedback__date-field {
+  width: 308px;
+  height: 38px;
+  padding-left: 15px;
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: 700;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f2f2; }
+  .feedback__date-field::placeholder {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black; }
+  .feedback__date-field:hover {
+    background-color: #ebebeb; }
+  .feedback__date-field:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    outline: none; }
+
+.feedback__date-button {
+  display: flex;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: #f2f2f2; }
+  .feedback__date-button:hover {
+    background-color: #ebebeb; }
+    .feedback__date-button:hover .feedback__date-icon {
+      fill: #000000; }
+  .feedback__date-button:active .feedback__date-icon {
+    fill: #81b3d2; }
+
+.feedback__date-icon {
+  margin: auto;
+  fill: #a9a9a9; }
+
+.feedback__form-bottom {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 54px; }
+
+.feedback__humans-label {
+  display: flex;
+  align-items: center; }
+  .feedback__humans-label:nth-child(1) {
+    width: 226px;
+    margin-right: auto; }
+  .feedback__humans-label:nth-child(2) {
+    width: 180px; }
+
+.feedback__humans-text {
+  margin-right: auto; }
+
+.feedback__humans-field {
+  width: 38px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 38px;
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  background-color: #f2f2f2; }
+  .feedback__humans-field:hover {
+    background-color: #ebebeb; }
+  .feedback__humans-field:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    outline: none; }
+
+.feedback__humans-button {
+  width: 38px;
+  height: 38px;
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 700;
+  vertical-align: middle;
+  text-align: center;
+  color: #a9a9a9;
+  border: none;
+  background-color: #f2f2f2; }
+  .feedback__humans-button:hover {
+    background-color: #ebebeb;
+    color: #000000; }
+  .feedback__humans-button:active {
+    color: #81b3d2; }
+
+.feedback__form-button {
+  width: 458px; }
+
+.page-inner .main-footer {
+  padding-top: 0;
+  background-image: none; }
+  .page-inner .main-footer__bottom {
+    background-color: #ffffff; }
+
+.sort {
+  display: flex;
+  padding: 30px 71px 21px;
+  font-size: 12px;
+  line-height: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .sort__result {
+    width: 123px;
+    margin-right: 42px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700; }
+  .sort__title {
+    margin-right: 39px;
+    padding-top: 6px;
+    font-size: 12px;
+    font-weight: 400; }
+  .sort__list {
+    display: flex;
+    margin-right: auto;
+    padding-top: 6px; }
+  .sort__item {
+    display: block;
+    height: 17px;
+    margin-right: 32px;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #81b3d2; }
+    .sort__item:last-child {
+      margin-right: 0; }
+    .sort__item[href]:hover, .sort__item[href]:focus {
+      color: #81b3d2; }
+    .sort__item[href]:active {
+      color: #000000;
+      border-bottom: none; }
+    .sort__item--active {
+      color: #81b3d2;
+      border-bottom: none; }
+  .sort__rank {
+    position: relative;
+    margin-top: 35px;
+    width: 30px; }
+    .sort__rank-item--up {
+      position: absolute;
+      top: -26px;
+      left: -7px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 6px 10px 6px;
+      border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent; }
+      .sort__rank-item--up.sort__rank-item--active {
+        border-color: transparent transparent #81b3d2 transparent; }
+      .sort__rank-item--up[href]:hover {
+        border-color: transparent transparent #000000 transparent; }
+      .sort__rank-item--up[href]:active {
+        border-color: transparent transparent #81b3d2 transparent; }
+    .sort__rank-item--down {
+      position: absolute;
+      top: -26px;
+      right: 1px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 6px 0 6px;
+      border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent; }
+      .sort__rank-item--down.sort__rank-item--active {
+        border-color: #81b3d2 transparent transparent transparent; }
+      .sort__rank-item--down[href]:hover {
+        border-color: black transparent transparent transparent; }
+      .sort__rank-item--down[href]:active {
+        border-color: #81b3d2 transparent transparent transparent; }
+
+.range__title {
+  display: block;
+  margin-bottom: 10px;
+  border: none;
+  font-size: 16px;
+  line-height: 21px; }
+
+.range__top {
+  position: relative;
+  display: flex;
+  padding-top: 3px;
+  padding-left: 65px;
+  padding-right: 9px;
+  border: 2px solid #ffffff;
+  border-radius: 2px; }
+  .range__top::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 157px;
+    width: 2px;
+    height: 22px;
+    background-color: #ffffff; }
+
+.range__box {
+  padding-top: 20px;
+  padding-bottom: 19px;
+  margin-bottom: 11px;
+  width: 100%;
+  height: 43px;
+  background-color: transparent;
+  border-radius: 3px; }
+
+.range__line {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #d7dcde; }
+
+.range__scale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 20px;
+  height: 2px;
+  background-color: #ffffff; }
+
+.range__indicator {
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 0 0 #cccdcd; }
+  .range__indicator:hover {
+    width: 22px;
+    height: 22px;
+    cursor: pointer; }
+  .range__indicator::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    margin-top: -2px;
+    left: 50%;
+    margin-left: -2px;
+    width: 4px;
+    height: 4px;
+    background-color: #ababab;
+    border-radius: 50%; }
+  .range__indicator--left {
+    left: 0; }
+  .range__indicator--right {
+    right: 20px; }
+
+.range__bottom {
+  display: flex; }
+
+.range__label {
+  display: flex;
+  width: 95px; }
+  .range__label:first-child {
+    margin-right: auto; }
+
+.range__field {
+  width: 72px;
+  height: 29px;
+  padding: 5px 5px 9px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none; }
+
+.hotels__item {
+  display: flex;
+  padding: 30px 71px 22px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.hotels__image {
+  margin-right: 31px; }
+
+.hotels__center {
+  width: 258px;
+  margin-right: auto; }
+
+.hotels__title {
+  margin-top: -5px;
+  margin-bottom: 7px;
+  font-size: 21px;
+  line-height: 26px; }
+
+.hotels__block-center {
+  display: flex;
+  width: 180px;
+  margin-bottom: 14px; }
+
+.hotels__type {
+  margin-right: auto;
+  line-height: 21px; }
+
+.hotels__price {
+  line-height: 21px; }
+
+.hotels__block-bottom {
+  display: flex;
+  width: 258px; }
+
+.hotels__book-hotel {
+  width: 142px; }
+
+.hotels__about {
+  width: 110px;
+  margin-right: auto; }
+
+.hotels__right {
+  width: 115px;
+  padding-left: 5px; }
+
+.hotels__stars {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px; }
+
+.hotels__star-icon {
+  margin-left: 7px;
+  fill: #81b3d2; }
+
+.hotels__raiting {
+  width: 110px;
+  height: 27px;
+  padding: 3px 7px 7px 18px;
+  line-height: 21px;
+  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.3); }
+
+.main-footer {
+  padding-top: 473px;
+  background-image: url("../img/background/background-map.jpg");
+  background-repeat: no-repeat; }
+  .main-footer__bottom {
+    display: flex;
+    align-items: center;
+    padding: 36px 101px 36px 133px;
+    background-color: rgba(255, 255, 255, 0.9); }
+  .main-footer__link {
+    margin-right: 29px;
+    font-weight: 700;
+    font-size: 21px; }
+  .main-footer__author-link {
+    display: flex;
+    align-items: center;
+    width: 197px; }
+    .main-footer__author-link:hover .main-footer__author-icon {
+      fill: #81b3d2; }
+    .main-footer__author-link:active .main-footer__author-icon {
+      fill: #a9a9a9; }
+  .main-footer__author-text {
+    margin-right: auto; }
+
+.social__list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; }
+
+.social__item {
+  margin-left: 6px; }
+  .social__item:first-child {
+    margin-left: 0; }
+
+.social__link {
+  display: flex;
+  user-select: none;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2; }
+  .social__link:hover, .social__link:focus {
+    background-color: #669ec0; }
+  .social__link:active {
+    background-color: #5496bd; }
+    .social__link:active .social__icon {
+      fill: rgba(255, 255, 255, 0.5); }
+
+.social__icon {
+  margin: auto;
+  fill: #ffffff; }
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: 'Ptsans', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  color: #000000; }
+  body.container {
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.3);
+    background-color: #ffffff; }

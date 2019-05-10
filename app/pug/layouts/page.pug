@@ -1,0 +1,11 @@
+block variables
+doctype html
+html(lang='ru')
+    include ../modules/head.pug
+    body(class=mainPage ? 'page container' : 'page-inner container')
+        include ../modules/header.pug
+
+        block pageContent
+
+        include ../modules/footer.pug
+        include ../modules/scripts.pug

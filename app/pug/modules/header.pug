@@ -1,0 +1,26 @@
+header.main-header
+    if (mainPage)
+        a.logo(aria-label='Логотип')
+            +img({
+                class: 'logo__image',
+                src: 'img/pngIcons/logo.png',
+                path: 'img/pngIcons/',
+                name: 'logo',
+                format: '.png',
+                alt: 'Логотип',
+                retina: ['2x', '3x']
+            })
+    else
+        a.logo(href='index.html', aria-label='Логотип, переход на главную страницу')
+            +img({
+                class: 'logo__image',
+                src: 'img/pngIcons/logo.png',
+                path: 'img/pngIcons/',
+                name: 'logo',
+                format: '.png',
+                alt: 'Логотип',
+                retina: ['2x', '3x']
+            })
+    nav.main-header__navigation
+        +navList('navigation-list', 'item', 'link', activNavItem, [{title: 'ИНФОРМАЦИЯ'}, {title: 'ФОТО И ВИДЕО'},{title: 'КАРТА ШТАТА'},{title: 'ГОСТИНИЦЫ', link: 'catalog'}])
+

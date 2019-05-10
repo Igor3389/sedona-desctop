@@ -1,0 +1,139 @@
+extends layouts/page
+include mixins/mixins
+block variables
+    - var title= 'Sedona | Главная'
+    - var mainPage= true
+    - var activNavItem= ''
+block pageContent
+    main.main(class=mainPage ? 'main-page' : 'inner-page')
+        header.main__header
+            h1.visually-hidden Седона
+            +img({
+                class: 'main__header-image-welcome',
+                src: 'img/pngIcons/welcome.png',
+                path: 'img/pngIcons/',
+                name: 'welcome',
+                format: '.png',
+                alt: 'Добро пожаловать',
+                retina: ['2x', '3x']
+            })
+            +img({
+                class: 'main__header-image-georgeous',
+                src: 'img/pngIcons/gorgeous.png',
+                path: 'img/pngIcons/',
+                name: 'gorgeous',
+                format: '.png',
+                alt: 'Джорджия',
+                retina: ['2x', '3x']
+            })
+            +img({
+                class: 'main__header-image-sedona',
+                src: 'img/pngIcons/sedona.png',
+                path: 'img/pngIcons/',
+                name: 'sedona',
+                format: '.png',
+                alt: 'Седона',
+                retina: ['2x', '3x']
+            })
+            +img({
+                class: 'main__header-image-because',
+                src: 'img/pngIcons/Because.png',
+                path: 'img/pngIcons/',
+                name: 'Because',
+                format: '.png',
+                alt: 'Потому что здесь есть гранд каньён',
+                retina: ['2x', '3x']
+            })
+            p.main__header-text
+                b.main__header-slogan СЕДОНА — небольшой городок в АРИЗОНЕ,  зАСЛУЖИвающий большего!
+        section.features
+            h2.visually-hidden Преимущества седоны
+            p.features__text Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            ol.features__large-list
+                li.features__large-item
+                    .features__item.features__item--blue
+                        h3.features__list-title НАСТОЯЩИЙ ГОРОДОК
+                        p.features__list-text
+                            span.features__list-number — №1 —
+                            | СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                    +img({
+                        class: 'features__large-image',
+                        src: 'img/shop.jpg',
+                        path: 'img/',
+                        name: 'shop',
+                        alt: 'Магазин',
+                        retina: ['2x', '3x']
+                    })
+            ul.features__sublist
+                li.features__subitem
+                    +icon('features__subicon', 'house', 75, 72, {ariaHidden: 'true', role: 'presentation'})
+                    h4.features__subtitle Жилье
+                    p.features__subtext Рекомендуем пожить в настоящем мотеле, все как в кино!
+                li.features__subitem
+                    +icon('features__subicon', 'hamburger', 74, 70, {ariaHidden: 'true', role: 'presentation'})
+                    h4.features__subtitle ЕДА
+                    p.features__subtext Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+                li.features__subitem
+                    +icon('features__subicon', 'present', 64, 76, {ariaHidden: 'true', role: 'presentation'})
+                    h4.features__subtitle СУВЕНИРЫ
+                    p.features__subtext Не только китайского, но и местного производства!
+            ol.features__large-list(start='2')
+                li.features__large-item
+                        +img({
+                            class: 'features__large-image',
+                            src: 'img/canyon.jpg',
+                            path: 'img/',
+                            name: 'canyon',
+                            alt: 'Каньён',
+                            retina: ['2x', '3x']
+                        })
+                        .features__item.features__item--blue
+                            h3.features__list-title ТАМ ЕСТЬ Мост дьявола
+                            p.features__list-text
+                                span.features__list-number — №2 —
+                                | Да, по нему можно пройти! Если конечно вы осмелитесь
+            ol.features__list(start='3')
+                li.features__item
+                    h3.features__list-title НЕБОЛЬШАЯ ПЛОЩАДЬ
+                    p.features__list-text
+                        span.features__list-number — №3 —
+                        | ВСЕ достопримечательности находятся очень близко
+                li.features__item
+                    h3.features__list-title КРАСИВАЯ ДОРОГА
+                    p.features__list-text
+                        span.features__list-number — №4 —
+                        | ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+                li.features__item
+                    h3.features__list-title МАЛО ТУРИСТОВ
+                    p.features__list-text
+                        span.features__list-number — №5 —
+                        | Большинство едет в гранд каньон и толпится там
+        section.feedback
+            h2.visually-hidden Обратная связь
+            b.feedback__slogan ЗАИНТЕРЕСОВАЛИСЬ?
+            p.feedback__text Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+            .feedback__block
+                button.feedback__button.button(type='button') ПОИСК ГОСТИНИЦЫ В седоне
+                form.feedback__form(action='#', method='post')
+                    .feedback__date-label
+                        span.feedback__date-text Дата заезда:
+                        input.feedback__date-field(type='text', placeholder='24 Апреля 2017', data-toggle="datepicker-start")
+                        button.feedback__date-button(type='button', name='dayStart')
+                            +icon('feedback__date-icon', 'calendar', 21, 22, {ariaHidden: 'true', role: 'presentation'})
+                    .feedback__date-label
+                        span.feedback__date-text Дата Выезда:
+                        input.feedback__date-field(type='text', placeholder='4 июля 2017', data-toggle="datepicker-end")
+                        button.feedback__date-button(type='button', name='dayFinish')
+                            +icon('feedback__date-icon', 'calendar', 21, 22, {ariaHidden: 'true', role: 'presentation'})
+                    .feedback__form-bottom
+                        .feedback__humans-label
+                            span.feedback__humans-text Взрослые:
+                            button.feedback__humans-button(type='button', name='manDiff') -
+                            input.feedback__humans-field(type='text', value='1', name='man')
+                            button.feedback__humans-button(type='button', name='manSum') +
+                        .feedback__humans-label
+                            span.feedback__humans-text Дети:
+                            button.feedback__humans-button(type='button', name='childDiff') -
+                            input.feedback__humans-field(type='text', value='0', name='child')
+                            button.feedback__humans-button(type='button', name='childSum') +
+                    button.feedback__form-button.button.button--blue(type='submit') Найти

@@ -1,0 +1,48 @@
+.button {
+  display: inline-block;
+  padding: 0 5px;
+  height: 86px;
+
+  font-family: 'Ptsans', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 86px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+  background-color: $acient-brown;
+
+
+  &:hover, &:focus {
+    cursor: pointer;
+    background-color: $acient-brown-hover;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $acient-brown-active;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &--blue {
+    height: 58px;
+    line-height: 58px;
+    background-color: $acient-blue;
+
+    &:hover, &:focus {
+      background-color: $acient-blue-hover;
+    }
+
+    &:active {
+      background-color: $acient-blue-active;
+    }
+  }
+
+  &--small {
+    height: 27px;
+    font-size: 14px;
+    line-height: 27px;
+  }
+}

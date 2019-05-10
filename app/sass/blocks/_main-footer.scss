@@ -1,0 +1,37 @@
+.main-footer {
+  padding-top: 473px;
+  background-image: url("../img/background/background-map.jpg");
+  background-repeat: no-repeat;
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    padding: 36px 101px 36px 133px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  &__link {
+    margin-right: 29px;
+    font-weight: 700;
+    font-size: 21px;
+  }
+
+  &__author-link {
+    display: flex;
+    align-items: center;
+    width: 197px;
+
+    &:hover  .main-footer__author-icon {
+      fill: $blue-text;
+    }
+
+    &:active  .main-footer__author-icon {
+      fill: $brown-active;
+    }
+  }
+
+  &__author-text {
+    margin-right: auto;
+  }
+}

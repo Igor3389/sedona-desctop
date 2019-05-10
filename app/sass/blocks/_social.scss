@@ -1,0 +1,39 @@
+.social {
+  &__list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__item {
+    margin-left: 6px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    display: flex;
+    user-select: none;
+    width: 46px;
+    height: 48px;
+    background-color: $acient-blue;
+
+    &:hover, &:focus {
+      background-color: $acient-blue-hover;
+    }
+
+    &:active {
+      background-color: $acient-blue-active;
+
+      & .social__icon {
+        fill: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  &__icon {
+    margin: auto;
+    fill: $white;
+  }
+}

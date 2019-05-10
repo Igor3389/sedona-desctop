@@ -1,0 +1,47 @@
+.form {
+  padding: 27px 71px 31px;
+
+  color: $white;
+  background-color: #6d8fae;
+  background-image: url("../img/background/background-filter.jpg");
+  background-repeat: no-repeat;
+
+  &__section {
+    border: none;
+  }
+
+  &__filter {
+    display: flex;
+  }
+
+  &__right {
+    width: 319px;
+    margin-left: auto;
+  }
+
+  &__button {
+    display: block;
+    margin-left: 85px;
+    padding: 0;
+    padding-bottom: 5px;
+    width: 137px;
+    height: 36px;
+    
+    font-family: 'Ptsans', sans-serif;
+    font-size: 14px;
+    line-height: 31px;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: $white;
+    border: 2px solid $white;
+    border-radius: 2px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
